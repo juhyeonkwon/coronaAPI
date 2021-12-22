@@ -3,13 +3,7 @@ const request = require('request');
 const convert = require('xml-js')
 const mysql = require('mysql');
 
-//mysql dbconfig
-const dbconfig = {
-    host : "192.168.0.21",
-    user: "root",
-    password: "root!",
-    database: "corona",
-}
+const dbconfig = require('../dbconfig').dbconfig;
 
 
 module.exports = {

@@ -3,13 +3,8 @@ const { connection } = require('mongoose');
 const mysql2 = require('mysql2/promise');
 const router = express.Router();
 
-const dbconfig = {
-    host : "192.168.0.21",
-    user: "root",
-    password: "root!",
-    database: "corona",
-    timezone: '09:00'
-}
+const dbconfig = require('../dbconfig').dbconfig;
+
 
 router.get('/', function(req, res) {
     console.log('hi')
